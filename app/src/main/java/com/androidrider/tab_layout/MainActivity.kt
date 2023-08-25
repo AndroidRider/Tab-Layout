@@ -1,12 +1,12 @@
 package com.androidrider.tab_layout
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import com.androidrider.tab_layout.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
+
 import com.google.android.material.tabs.TabLayoutMediator
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val toolbar = binding.toolBar
         toolbar.title = "WhatsApp"
 
+        val viewPager = binding.viewPager2
         // Calling methods
         setupViewPagerAdapter()
         setUpTabLayout()
@@ -51,8 +52,6 @@ class MainActivity : AppCompatActivity() {
             super.getOnBackPressedDispatcher().onBackPressed()
         }
     }
-
-
 
 
 }
